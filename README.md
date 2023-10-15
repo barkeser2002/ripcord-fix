@@ -5,7 +5,7 @@ Fixes Ripcord:
 3. not showing "Stage" voice channels  
    *(This is accomplished by making Ripcord think stages are regular voice channels. This means that there is no way to become a speaker, and no way to differentiate a stage from a regular voice channel)*
 
-Supports Ripcord 0.4.29 on Windows. [Supports Ripcord 0.4.29 on Linux, albeit with limited testing.](https://github.com/barkeser2002)
+Supports Ripcord 0.4.29 on Windows.
 
 ## Usage
 Download the DLL file from [the Releases page](https://github.com/barkeser2002/ripcord-fix/releases) and place it in your Ripcord directory.
