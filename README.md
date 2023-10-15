@@ -1,0 +1,19 @@
+# ripcord-fix
+Fixes Ripcord:
+1. reading RTP header extensions larger than 8 bytes as voice data, causing garbled audio in voice chats
+2. sending and receiving an old (?) version of the IP discovery packet, causing it to get stuck on "Routing..." when attempting to join voice channels
+3. not showing "Stage" voice channels  
+   *(This is accomplished by making Ripcord think stages are regular voice channels. This means that there is no way to become a speaker, and no way to differentiate a stage from a regular voice channel)*
+
+Supports Ripcord 0.4.29 on Windows. [Supports Ripcord 0.4.29 on Linux, albeit with limited testing.](https://github.com/barkeser2002)
+
+## Usage
+Download the DLL file from [the Releases page](https://github.com/barkeser2002/ripcord-fix/releases) and place it in your Ripcord directory.
+
+## Building
+**If you don't know what you're doing, look at the Usage section above instead.**
+1. Install Visual Studio 2019 or newer
+2. Run `build.bat`
+
+## Credits
+[@p0358](https://github.com/p0358) for writing [Northstar's `loader_wsock32_proxy`](https://github.com/R2Northstar/NorthstarLauncher/tree/main/loader_wsock32_proxy)
